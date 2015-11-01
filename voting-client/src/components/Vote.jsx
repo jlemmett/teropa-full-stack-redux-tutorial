@@ -2,6 +2,8 @@ import React from 'react';
 
 export default React.createClass({
 
+    mixins: [PureRenderMixin],
+
     getPair: function() {
         return this.props.pair || [];
     },
